@@ -298,3 +298,4 @@ log.lik.post.robit <- function(X, y, nu = 3, beta, beta_a = rep(0, ncol(X)),
   return(out) 
 }
 
+
