@@ -1,4 +1,5 @@
-## Analysis of convergence of DA and sandwich DA algorithms in low-dimensional data.
+## Analysis of convergence of DA and sandwich DA algorithms in low-dimensional
+## lupus dataset.
 
 
 #------------------------------------------------------------------------------------
