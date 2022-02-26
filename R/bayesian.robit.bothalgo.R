@@ -51,8 +51,14 @@ y <- lupus[,"response"]
 
 # Prior choice
 I <- diag(1, ncol(X), ncol(X))
-g.small <- 3.49
-g.large <- 1000  #g in the g prior
+g.small <- 3.49  # Choosing a small value of g in the Zellner's g prior
+                 # (see Chakraborty and Khare (2017)). g = 3.49 ensures
+                 # the trace-class property of the probit DA algorithm
+                 # discussed in Chakraborty and Khare (2017).
+
+g.large <- 1000  # Choosing a large value of g in the Zellner's g prior
+                 # (see Chakraborty and Khare (2017)). This high value of
+                 # g induces a diffuse prior on the coefficient vector \beta.
 
 
 # User provided values
